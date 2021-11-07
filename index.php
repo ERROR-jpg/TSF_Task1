@@ -39,14 +39,14 @@
               <img alt="content" class="object-cover object-center h-full w-full" src="images/WhatsApp Image 2021-11-03 at 4.19.02 PM (1).jpeg">
             </div>
             <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Transfer Funds</h2>
-            <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Transfer</button>
+            <a href="customer_table.php"><button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Transfer</button></a>
           </div>
           <div class="sm:w-1/2 mb-10 px-4">
             <div class="rounded-lg h-64 overflow-hidden">
               <img alt="content" class="object-cover object-center h-full w-full"  src="images/WhatsApp Image 2021-11-03 at 4.19.02 PM.jpeg">
             </div>
             <h2 class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3">Transaction History</h2>
-            <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Transactions</button>
+           <a href="transactions.php"> <button class="flex mx-auto mt-6 text-white bg-indigo-500 border-0 py-2 px-5 focus:outline-none hover:bg-indigo-600 rounded">Transactions</button></a>
           </div>
         </div>
    
@@ -65,6 +65,7 @@
           <div class="flex flex-wrap -m-2">
             <div class="p-2 w-1/2">
               <div class="relative">
+              <form action="contactus.php" method="post">
                 <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
                 <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
               </div>

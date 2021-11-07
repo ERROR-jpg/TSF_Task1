@@ -82,40 +82,38 @@ if(isset($_POST['submit']))
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fund Transfer</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Easy Money Transfer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/table.css">
-    <link rel="stylesheet" type="text/css" href="css/navbar.css">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-
+    <link rel="shortcut icon" href="images/download (1).png">
     <style type="text/css">
 
 
     	
 		button{
-			border:black;
-			background: black;
+			border:none;
+			background: blue;
 		}
 	    button:hover{
-			background-color: grey;
+			background-color: violet;
 			transform: scale(1.1);
-			color:white;
+			color: white;
 		}
 
     </style>
 </head>
 
-<body>
- 
 <?php
   include 'header.php';
   ?>
+ 
 <hr>
-
 	<div class="container">
-        <h2 class="text-center pt-4" style="color : black;  font: size 35px; font-weight: bold;">Instant Fund Transfer</h2>
+        <h2 class="text-center pt-4" style="color : black; font-size:40px; font-weight: bold;">Instant Fund Transfer</h2>
             <?php
                 include 'config.php';
                 $sid=$_GET['id'];
@@ -176,14 +174,14 @@ if(isset($_POST['submit']))
             <input type="number" class="form-control" name="amount" required>   
             <br><br>
                 <div class="text-center" >
-            <button class="btn mt-3" name="submit" type="submit" id="myBtn" >Transfer Funds</button>
+            <button class="btn mt-3" name="submit" type="submit" id="myBtn"  style="background-color : blue; color:white;" >Transfer Funds</button>
             </div>
-        </form>
+        </form> 
     </div>
     <?php
   include 'footer.php';
   ?>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>

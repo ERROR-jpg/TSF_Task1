@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Customers</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/table.css">
-       <link rel="stylesheet" type="text/css" href="css/navbar.css">
-<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/download (1).png">
     <style type="text/css">
       button{
-        transition: 1s;
-      }
-      button:hover{
-        background-color:#616C6F;
-        color: grey;
-      }
+			border:none;
+			background: blue;
+		}
+	    button:hover{
+			background-color: violet;
+			transform: scale(1.1);
+			color: white;
+		}
     </style>
 </head>
 <body>
@@ -61,7 +63,7 @@
                         <td class="py-2"><?php echo $rows['name']?></td>
                         <td class="py-2"><?php echo $rows['email']?></td>
                         <td class="py-2"><?php echo $rows['balance']?></td>
-                        <td><a href="userdetail.php?id= <?php echo $rows['id'] ;?>"> <button type="button" class="btn" style="background-color : #808080;">Transfer money</button></a></td> 
+                        <td><a href="userdetail.php?id= <?php echo $rows['id'] ;?>"> <button type="button" class="btn" style="background-color : blue; color: white;">Transfer Funds</button></a></td> 
                     </tr>
                 <?php
                     }
